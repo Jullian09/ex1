@@ -14,6 +14,10 @@
       <p style="background:green; height: 30px; color: #FFF; padding: 15px; text-align:center; margin-top: 0; "><%= notice %></p>
     <% end %>
 
+    <% if !alert.nil? %>
+      <p style="background:red; height: 30px; color: #FFF; padding: 15px; text-align:center; margin-top: 0; "><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
